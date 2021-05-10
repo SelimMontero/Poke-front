@@ -18,5 +18,7 @@ npm run build
 
 ## Correr el proyecto
 
+El servidor esta corriendo localhost:3000
+
 npm run dev
 
