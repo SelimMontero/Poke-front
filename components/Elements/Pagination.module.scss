@@ -1,0 +1,24 @@
+.btn_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 18px;
+    color: white;
+    font-size: medium;
+    background-color: purple;
+
+    & :hover {
+        border: 1px solid purple;
+        color: purple;
+        background-color: white;
+    }
+}
+
+.page {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}

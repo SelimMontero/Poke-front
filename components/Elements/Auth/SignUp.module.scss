@@ -1,0 +1,34 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/forms.module.scss";
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 40rem;
+
+    @media screen and (max-width: $small) {
+        height: 38rem;
+    }
+}
+
+.form {
+    box-shadow: $shadows;
+    border-radius: 16px;
+    height: 33em;
+    width: 25em;
+
+    @media screen and (max-width: $small) {
+        width: 18em;
+    }
+}
+
+.form_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}

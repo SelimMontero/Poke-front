@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.tag {
+    background: black;
+    border-radius: 2em;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    -webkit-transition: color 0.2s;
+    z-index: 1;
+}
+
+.fire {
+    background-color: #F49D40;
+}
+
+.water {
+    background-color: $base-color-blue;
+}
+
+.flying {
+    background-color: #ACC8FE;
+}
+
+.poison {
+    background-color: #9267AF;
+}
+
+.grass {
+    background-color: #64A30A;
+}
+
+.bug {
+    background-color: #86C776;
+}
+
+.normal {
+    background-color: #C4BEB5;
+}

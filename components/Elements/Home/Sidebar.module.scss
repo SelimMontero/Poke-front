@@ -1,0 +1,232 @@
+@import "../../../styles/variables.scss";
+
+.sidebar {
+    background-color: $base-color-blue;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 22rem;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+    @media screen and (max-height: $medium-height) {
+        width: 20rem;
+    }
+
+    @media screen and (max-height: $small-height) {
+        width: 18rem;
+    }
+
+    @media screen and (max-width: $small) {
+        width: 15rem;
+    }
+
+    @media screen and (max-width: $small_v2) {
+        padding-top: 0;
+        height: 9%;
+        width: 100%;
+        z-index: 10;
+    }
+}
+
+.principal_bar {
+    @media screen and (max-width: $small_v2) {
+        background: #566CD6;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 99 !important;
+        transition: all 0.3s ease;
+        transform: translateX(-100%);
+    }
+}
+
+.sidebar_image {
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin-top: 1.4rem;
+    }
+}
+
+.sidebar_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    h2 {
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h3 {
+        color: #C3CBF0;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    p {
+        color: #C3CBF0;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top: 3rem;
+    }
+
+    @media screen and (max-height: $medium-height) {
+        font-size: 12px;
+        height: 30%;
+    }
+
+    @media screen and (max-height: $small-height) {
+        height: 55%;
+    }
+}
+
+.sidebar_footer {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+        width: 17rem;
+        height: 2rem;
+        text-align: center;
+
+        @media screen and (max-width: $small) {
+            width: 13rem;
+        }
+    }
+
+    span {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 15px;
+
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        padding-top: 15px;
+        background-image: url(../../../public/assets/Logout.svg);
+        background-repeat: no-repeat;
+
+        background-size: 28px 28px;
+        background-position: 12px 10px;
+        background-color: #7789DF;
+    }
+
+    @media screen and (max-height: $medium-height) {
+        height: 40%;
+    }
+
+    @media screen and (max-height: $small-height) {
+        height: 40%;
+    }
+}
+
+.sidebar_show {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    margin-left: 2rem;
+    height: 2rem;
+    width: 2rem;
+
+    span {
+        padding: 15px;
+        background-image: url(../../../public/assets/Menu.svg);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 6px 5px;
+    }
+}
+
+.sidebar_favorite_pokemons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40%;
+    width: 100%;
+
+    p {
+        width: 17rem;
+        height: 2rem;
+        text-align: center;
+
+        @media screen and (max-width: $small) {
+            width: 13rem;
+        }
+    }
+
+    span {
+        display: inline-block;
+        padding-top: 15px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 15px;
+
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        background-color: #7789DF;
+    }
+
+    @media screen and (max-height: $medium-height) {
+        height: 40%;
+    }
+
+    @media screen and (max-height: $small-height) {
+        height: 10%;
+    }
+}
+
+.responsive_view_navbar {
+    display: none;
+
+    @media screen and (max-width: $small_v2) {
+        display: block;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #566cd6;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.open {
+    transform: translate(-100%);
+}
+
+.close {
+    transform: translate(0%);
+}

@@ -1,0 +1,127 @@
+@import "../../../styles/variables.scss";
+
+.header_container {
+    margin-left: 22rem;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+
+    @media screen and (max-width: $small_v2) {
+        margin: 0px;
+    }
+}
+
+.header_btns {
+    width: 100%;
+}
+
+.box_profile {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    height: 100%;
+    width: 100%;
+    color: $color-text;
+    font-family: sans-serif;
+
+    @media screen and (max-width: $max-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.box_profile_data {
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+
+    @media screen and (max-width: $small_v2) {
+        margin-left: 1rem;
+    }
+}
+
+.picture_container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    width: 30%;
+    box-shadow: $shadows;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+
+    @media screen and (max-width: $max-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 84%;
+        height: 45vh;
+        margin-bottom: 2rem;
+    }
+}
+
+.pokemon_profile {
+    border-radius: 16px;
+    box-shadow: $shadows;
+    width: 60%;
+    height: 73vh;
+
+    @media screen and (max-width: $max-width) {
+        width: 84%;
+        height: 74vh;
+        margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: $medium_v2) {
+        font-size: 0.7rem;
+        height: 80%;
+    }
+}
+
+.type_pokemon {
+    span {
+        @media screen and (max-width: $medium_v2) {
+            font-size: 0.6rem !important;
+        }
+    }
+}
+
+.pictures_back_front_pokemon {
+    display: flex;
+}
+
+.name_pokemon {
+    font-size: 1.3rem;
+
+    @media screen and (max-width: $medium_v2) {
+        font-size: 1rem;
+    }
+}
+
+.text_box {
+    border-bottom: 1px solid #40415F;
+    width: 90%;
+}
+
+.shiny_pokemon_photo {
+    display: flex;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+}
+
+.data_pokemon {
+    p {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+
+.picture_principal {
+    text-align: center;
+    margin-top: 3rem;
+
+    img {
+        width: 60%;
+        height: 75%;
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/variables.scss";
+
+.home_container {
+    margin-left: 22rem;
+    padding: 0px 10px;
+
+    @media screen and (max-width: $small_v2) {
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+.header_container {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}

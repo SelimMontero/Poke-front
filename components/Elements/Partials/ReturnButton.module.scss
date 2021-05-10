@@ -1,0 +1,24 @@
+@import "../../../styles/variables.scss";
+
+.return_button {
+    background-color: $base-color-blue;
+    position: absolute;
+    top: 2.7rem;
+    margin-left: 0.5rem;
+    width: 3.5rem;
+    height: 2.2rem;
+    cursor: pointer;
+
+    border-radius: 16px;
+    border: 0px;
+    background-color: $base-color-blue;
+    background-image: url(../../../public/assets/Back.svg);
+    background-repeat: no-repeat;
+
+    background-size: 22px 22px;
+    background-position: 16px 5px;
+
+    @media screen and (max-width: $small_v2) {
+        top: 7rem;
+    }
+}
